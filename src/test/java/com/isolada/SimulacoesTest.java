@@ -46,7 +46,7 @@ public class SimulacoesTest {
                     .contentType(ContentType.JSON)
                     .body("{\n" +
                     "  \"nome\": \"Jony\",\n" +
-                    "  \"cpf\": \"1805\",\n" +
+                    "  \"cpf\": \"66418052226511\",\n" +
                     "  \"email\": \"email@email.com\",\n" +
                     "  \"valor\": 30000,\n" +
                     "  \"parcelas\": 3,\n" +
@@ -69,7 +69,7 @@ public class SimulacoesTest {
                         "  \"cpf\": \"\",\n" +
                         "  \"email\": \"email@email.com\",\n" +
                         "  \"valor\": 30000,\n" +
-                        "  \"parcelas\": 3,\n" +
+                        "  \"parcelas\": ,\n" +
                         "  \"seguro\": true\n" +
                         "}")
                 .log()
@@ -87,7 +87,7 @@ public class SimulacoesTest {
             .contentType(ContentType.JSON)
             .body("{\n" +
                         "  \"nome\": \"Cliente\",\n" +
-                        "  \"cpf\":\"3\",\n" +
+                        "  \"cpf\":\"66414919004\",\n" +
                         "  \"email\": \"email@email.com\",\n" +
                         "  \"valor\": 30000,\n" +
                         "  \"parcelas\": 3,\n" +
@@ -160,7 +160,7 @@ public class SimulacoesTest {
         given()
             .contentType(ContentType.JSON)
         .when()
-            .get("/v1/simulacoes/97093236014")
+            .get("/v1/simulacoes/66414919004")
         .then()
             .assertThat()
                 .statusCode(200)

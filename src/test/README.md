@@ -31,6 +31,8 @@ mvn surefire:test
 
 *BUGS:
 
+No caso do @Test: testSimulacaoParaOMesmoCPFStatus409 - Está com falha pois deveria retornar Status 409 mas está retornando Status 400.
+
 -Encontrei alguns bugs ao realizar testes manuais no POSTMAN conforme as imagens em anexo na pasta BUGS ENCONTRADOS.
 
 *RELATÓRIO ALLURE:
